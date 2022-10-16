@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>Turtl=Soft</groupId>
+    <groupId>TurtleSoft</groupId>
     <artifactId>Plan4Cook2</artifactId>
     <version>0.3.8-SNAPSHOT</version>
 
@@ -16,7 +16,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.28</version>
+            <version>8.0.30</version>
         </dependency>
     </dependencies>
 </project>
