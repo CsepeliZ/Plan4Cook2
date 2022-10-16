@@ -15,14 +15,14 @@ public class UserConsole {
     IngredientRepository ingredientRepository = new IngredientRepository();
     Ui ui = new Ui();
 
-    private String userStr;
-    private int userInt;
-    private double userDouble;
+    private String currentName;
+    private int currentInt;
+    private double currentDouble;
 
     public void startApp() {
 
         boolean endProgram = false;
-        cookingPlanRepository.createCookingPlanTable();
+        // cookingPlanRepository.createCookingPlanTable();
         mealRepository.createMealTable();
         ingredientRepository.createingredientTable();
         mainMenu();
@@ -31,9 +31,10 @@ public class UserConsole {
             switch (userInput) {
                 case 1:
                     CookingPlan cookingPlan = cookingPlanRepository.createNewCookingPlan();
-                    System.out.println(plane);
+
+
                 case 2:
-                    String newMealInfo = mealRepository.createNewMeal(new Meal(ui.askText()); /* TODO: list of ingreds */;
+                    String newMealInfo = mealRepository.createNewMeal(new Meal(ui.askText()); /* TODO: list of ingreds */ ;
                     // TODO: LIKE-alapú pontosítás az UI-ban
                     break;
                 case 3:
