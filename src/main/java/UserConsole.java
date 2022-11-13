@@ -34,7 +34,7 @@ public class UserConsole {
 
 
                 case 2:
-                    String newMealInfo = mealRepository.createNewMeal(new Meal(ui.askText()); /* TODO: list of ingreds */ ;
+                    String newMealInfo = mealRepository.createNewMeal(new Meal(ui.askText())); /* TODO: list of ingreds */ ;
                     // TODO: LIKE-alapú pontosítás az UI-ban
                     break;
                 case 3:
