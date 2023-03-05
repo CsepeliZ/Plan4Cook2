@@ -26,6 +26,7 @@ public class UserConsole {
         mealRepository.createMealTable();
         ingredientRepository.createingredientTable();
         mainMenu();
+        String newMealInfo;
         while (!endProgram) {
             int userInput = ui.askInt();
             switch (userInput) {
@@ -34,15 +35,16 @@ public class UserConsole {
 
 
                 case 2:
-                    String newMealInfo = mealRepository.createNewMeal(new Meal(ui.askText())); /* TODO: list of ingreds */ ;
+                     // TODO: list of ingreds
+                    newMealInfo = mealRepository.createNewMeal(ui.askText());
                     // TODO: LIKE-alapú pontosítás az UI-ban
                     break;
                 case 3:
-                    String newMealInfo = mealRepository.modifyMeal(ui.askText());
+                    newMealInfo = mealRepository.modifyMeal(ui.askText());
                     // TODO: LIKE-alapú pontosítás az UI-ban
                     break;
                 case 4:
-                    String newMealInfo = mealRepository.deleteMeal(ui.askText());
+                    newMealInfo = mealRepository.deleteMeal(ui.askText());
                     // TODO: LIKE-alapú pontosítás az UI-ban
                     break;
                 case 0:
