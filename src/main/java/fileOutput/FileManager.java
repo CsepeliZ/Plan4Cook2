@@ -9,10 +9,10 @@ public class FileManager {
 
 
 
-    public void writeMenu(Filename filename, List<String> menuText) {
+    public void writeMenu(Filename filename, List<String> menuText) {  // az UI hívja meg
 
         try {
-            Path menuOutput = Path.of("src/main/resources/menu" + filename.toString() + ".txt");
+            Path menuOutput = Path.of("src/main/resources/menu" + filename.fname + ".txt");
             Files.createFile(menuOutput);
 
             String currentTime = CurrentDateTime.currentDateTime();
