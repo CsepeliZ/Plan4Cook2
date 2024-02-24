@@ -6,7 +6,7 @@
 
     <groupId>TurtleSoft</groupId>
     <artifactId>Plan4Cook2</artifactId>
-    <version>0.3.8-SNAPSHOT</version>
+    <version>0.3.9-SNAPSHOT</version>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>

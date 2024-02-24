@@ -8,6 +8,6 @@ public class Filename {
 
     String currentTime = CurrentDateTime.currentDateTime();
 
-    String fname = "myMenu_" + currentTime;
+    String fName = "myMenu_" + currentTime;
 
 }

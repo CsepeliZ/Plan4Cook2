@@ -1,12 +1,8 @@
 import domain.CookingPlan;
-import domain.Meal;
 import repository.CookingPlanRepository;
 import repository.IngredientRepository;
 import repository.MealRepository;
 import ui.Ui;
-
-import java.util.List;
-import java.util.Scanner;
 
 public class UserConsole {
 
@@ -26,7 +22,6 @@ public class UserConsole {
         mealRepository.createMealTable();
         ingredientRepository.createingredientTable();
         mainMenu();
-        String newMealInfo;
         while (!endProgram) {
             int userInput = ui.askInt();
             switch (userInput) {
@@ -35,16 +30,16 @@ public class UserConsole {
 
 
                 case 2:
-                     // TODO: list of ingreds
-                    newMealInfo = mealRepository.createNewMeal(ui.askText());
+                    // TODO: list of ingreds
+                    mealRepository.createNewMeal(ui.askText());
                     // TODO: LIKE-alapú pontosítás az UI-ban
                     break;
                 case 3:
-                    newMealInfo = mealRepository.modifyMeal(ui.askText());
+                    mealRepository.modifyMeal(ui.askText());
                     // TODO: LIKE-alapú pontosítás az UI-ban
                     break;
                 case 4:
-                    newMealInfo = mealRepository.deleteMeal(ui.askText());
+                    mealRepository.deleteMeal(ui.askText());
                     // TODO: LIKE-alapú pontosítás az UI-ban
                     break;
                 case 0:

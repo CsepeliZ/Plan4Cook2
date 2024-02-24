@@ -12,7 +12,7 @@ public class FileManager {
     public void writeMenu(Filename filename, List<String> menuText) {  // az UI hívja meg
 
         try {
-            Path menuOutput = Path.of("src/main/resources/menu" + filename.fname + ".txt");
+            Path menuOutput = Path.of("src/main/resources/menu" + filename.fName + ".txt");
             Files.createFile(menuOutput);
 
             String currentTime = CurrentDateTime.currentDateTime();
