@@ -8,7 +8,6 @@ import java.util.List;
 public class FileManager {
 
 
-
     public void writeMenu(Filename filename, List<String> menuText) {  // az UI hívja meg
 
         try {

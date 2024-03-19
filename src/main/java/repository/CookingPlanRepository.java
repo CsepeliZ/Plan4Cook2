@@ -6,4 +6,7 @@ public class CookingPlanRepository {
     public CookingPlan createNewCookingPlan() {
         return null;
     }
+
+    public void createCookingPlanTable() {
+    }
 }

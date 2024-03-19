@@ -18,9 +18,9 @@ public class UserConsole {
     public void startApp() {
 
         boolean endProgram = false;
-        // cookingPlanRepository.createCookingPlanTable();
+        cookingPlanRepository.createCookingPlanTable();
         mealRepository.createMealTable();
-        ingredientRepository.createingredientTable();
+        ingredientRepository.createIngredientTable();
         mainMenu();
         while (!endProgram) {
             int userInput = ui.askInt();
